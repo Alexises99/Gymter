@@ -28,13 +28,13 @@ export default function Home() {
           <h2 className={`${kdamThmor.className} text-3xl text-center`}>
             KEEP YOUR RECORDS, REACH YOUR LIMITS
           </h2>
-          <p className="text-lg">The best record app to enhace your progress</p>
-          <Button className="bg-yellow-300 w-full text-lg py-7 font-bold">
+
+          <Button variant={'default'} className="w-full max-w-xs">
             ENJOY THE PROCESS
           </Button>
           <p className="text-lg">
             Dont have an account?
-            <Button variant="link" className="p-2 text-yellow-300 text-lg">
+            <Button variant="link" className="text-lg">
               Sign up
             </Button>
           </p>

@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier . --write",
-    "db:generate": "prisma generate --no-engine",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio",
@@ -25,6 +26,6 @@
   "author": "Alex Sanchez",
   "license": "ISC",
   "dependencies": {
-    "@prisma/extension-accelerate": "^1.3.0"
+    "@prisma/client": "6.12.0"
   }
 }
