@@ -3,7 +3,22 @@ packages:
   - packages/*
 
 catalogs:
+  main:
+    typescript: ^5.9.2
+    eslint: ^9.23.0
+    prettier: ^3.5.3
+    '@types/node': ^24.7.0
+    zod: ^4.1.12
   prisma:
     prisma: latest
+    '@prisma/client': 6.17.0
+  react:
+    react: 19.2.0
+    react-dom: 19.2.0
+    '@types/react': ^19.2.2
+    '@types/react-dom': ^19.2.1
+  next:
+    next: 15.5.4
+    eslint-config-next: 15.5.4
 
 nodeLinker: hoisted

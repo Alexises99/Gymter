@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "database": "workspace:*",
+    "next": "catalog:next",
+    "next-intl": "^4.3.11",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
+  },
+  "devDependencies": {
+    "@gymter/eslint-config": "workspace:*",
+    "@gymter/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "catalog:main",
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
+    "eslint": "catalog:main",
+    "eslint-config-next": "catalog:next",
+    "tailwindcss": "^4",
+    "typescript": "catalog:main"
+  }
+}

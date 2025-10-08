@@ -17,11 +17,13 @@
     "@trpc/server": "^11.0.0",
     "database": "workspace:*",
     "fastify": "^5.2.2",
-    "fastify-type-provider-zod": "^4.0.2",
-    "zod": "^3.24.2"
+    "fastify-type-provider-zod": "^5.1.0",
+    "zod": "catalog:main"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "@gymter/typescript-config": "workspace:*",
+    "@gymter/eslint-config": "workspace:*",
+    "@types/node": "catalog:main",
+    "tsx": "^4.20.6"
   }
 }
