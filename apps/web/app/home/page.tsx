@@ -1,3 +1,11 @@
+import { DayCard } from './components/DayCard'
+
 export default function HomePage() {
-  return <h1>Home Page</h1>
+  return (
+    <>
+      <main className="font-poppins">
+        <DayCard date={new Date()} />
+      </main>
+    </>
+  )
 }

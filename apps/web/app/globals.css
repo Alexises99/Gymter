@@ -3,6 +3,85 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* 🧩 Headings */
+  .h1 {
+    font-family: var(--font-poppins);
+    font-size: 61px;
+    line-height: 120%;
+    font-weight: 600; /* Semibold */
+  }
+
+  .h2 {
+    font-family: var(--font-heading);
+    font-size: 49px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  .h3 {
+    font-family: var(--font-heading);
+    font-size: 39px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  .h4 {
+    font-family: var(--font-heading);
+    font-size: 31px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  .h5 {
+    font-family: var(--font-heading);
+    font-size: 25px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  /* 📝 Paragraphs */
+  .p-large {
+    font-family: var(--font-paragraph);
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  .p {
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  .p-medium {
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  .p-bold {
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+
+  .p-mini {
+    font-family: var(--font-paragraph);
+    font-size: 13px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  .p-tiny {
+    font-family: var(--font-paragraph);
+    font-size: 10px;
+    line-height: 120%;
+    font-weight: 400;
+  }
 }
 
 @theme inline {
@@ -50,6 +129,8 @@
   /* 🧱 Superficies */
   --color-surface: #ffffff;
   --color-surface-dark: #0a0a0a;
+
+  --font-poppins: var(--font-poppins), system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

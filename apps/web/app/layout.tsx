@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 
 import './globals.css'
@@ -7,6 +7,14 @@ import './globals.css'
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
+  display: 'swap',
+  preload: true
+})
+
+const poppins = Poppins({
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
   preload: true
 })
@@ -23,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} ${poppins.variable}  antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

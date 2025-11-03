@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "database": "workspace:*",
@@ -16,15 +18,26 @@
     "react-dom": "catalog:react"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.2",
     "@gymter/eslint-config": "workspace:*",
     "@gymter/typescript-config": "workspace:*",
+    "@storybook/addon-a11y": "^10.0.3",
+    "@storybook/addon-docs": "^10.0.3",
+    "@storybook/addon-vitest": "^10.0.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "catalog:main",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
     "eslint": "catalog:main",
     "eslint-config-next": "catalog:next",
+    "eslint-plugin-storybook": "^10.0.3",
+    "storybook": "^10.0.3",
     "tailwindcss": "^4",
-    "typescript": "catalog:main"
+    "typescript": "catalog:main",
+    "@storybook/nextjs-vite": "^10.0.3",
+    "vitest": "^4.0.6",
+    "playwright": "^1.56.1",
+    "@vitest/browser-playwright": "^4.0.6",
+    "@vitest/coverage-v8": "^4.0.6"
   }
 }
