@@ -1,10 +1,10 @@
-import { DayCard } from './components/DayCard'
+import { DynamicTimeContainer } from './components/DynamicTimeContainer'
 
 export default function HomePage() {
   return (
     <>
       <main className="font-poppins">
-        <DayCard date={new Date()} />
+        <DynamicTimeContainer />
       </main>
     </>
   )

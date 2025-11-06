@@ -4,13 +4,15 @@ type Variant = 'default' | 'selected' | 'disabled'
 
 interface DayCardProps {
   date: Date
-  handleClick?: () => void
+  handleClick: () => void
+  translationX?: number
   variant?: Variant
 }
 
 export function DayCard({
   date,
   handleClick,
+  translationX = 0,
   variant = 'default'
 }: DayCardProps) {
   const variants: Record<Variant, string> = {
@@ -21,8 +23,9 @@ export function DayCard({
 
   return (
     <button
-      className={`${variants[variant]} w-14 aspect-square rounded-lg flex flex-col items-center justify-center text-black`}
+      className={`${variants[variant]} w-14 aspect-square rounded-lg flex flex-col items-center justify-center text-black shrink-0 absolute left-1/2`}
       onClick={handleClick}
+      style={{ transform: `translateX(${translationX}px)` }}
     >
       <span className=" p-medium">
         {date.toLocaleDateString('default', { day: 'numeric' })}
