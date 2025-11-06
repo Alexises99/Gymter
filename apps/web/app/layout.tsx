@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 
 import './globals.css'
+import { Header } from './components/header'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -31,8 +32,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable}  antialiased`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body
+        className={`${inter.variable} ${poppins.variable} antialiased bg-gray-100`}
+      >
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )

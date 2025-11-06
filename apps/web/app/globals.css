@@ -42,42 +42,42 @@
 
   /* 📝 Paragraphs */
   .p-large {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 20px;
     line-height: 120%;
     font-weight: 400;
   }
 
   .p {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 16px;
     line-height: 120%;
     font-weight: 400;
   }
 
   .p-medium {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 16px;
     line-height: 120%;
     font-weight: 500;
   }
 
   .p-bold {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 16px;
     line-height: 120%;
     font-weight: 700;
   }
 
   .p-mini {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 13px;
     line-height: 120%;
     font-weight: 400;
   }
 
   .p-tiny {
-    font-family: var(--font-paragraph);
+    font-family: var(--font-inter);
     font-size: 10px;
     line-height: 120%;
     font-weight: 400;
@@ -141,7 +141,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--color-grey-100);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

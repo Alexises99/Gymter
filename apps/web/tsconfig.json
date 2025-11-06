@@ -3,16 +3,19 @@
   "compilerOptions": {
     "ignoreDeprecations": "6.0",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/app/*": ["./app/*"],
+      "@/components/*": ["./app/home/components/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/types/*": ["./types/*"],
+      "@/stories/*": ["./stories/*"],
+      "@/i18n/*": ["./i18n/*"],
+      "@/messages/*": ["./messages/*"],
+      "@/public/*": ["./public/*"]
     },
+    "baseUrl": ".",
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".storybook/**/*.ts"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

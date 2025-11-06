@@ -9,8 +9,11 @@ import {
 } from 'react'
 import { msPerPx } from '../components/Timeline'
 
+const now = new Date()
+now.setUTCHours(0, 0, 0, 0)
+
 export function useTimeTracker() {
-  const [newCenter, newRadius] = timeUtils.initializeRangeDays(3, new Date())
+  const [newCenter, newRadius] = timeUtils.initializeRangeDays(3, now)
 
   const [center, setCenter] = useState<number>(newCenter)
   const [dragging, setDragging] = useState<boolean>(false)

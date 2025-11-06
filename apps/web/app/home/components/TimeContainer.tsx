@@ -17,7 +17,7 @@ export function TimeContainer() {
 
   return (
     <section
-      className="overflow-hidden relative flex h-56"
+      className="overflow-hidden relative flex h-14"
       onMouseDown={handleTouchStart}
       onMouseMove={handleTouchMove}
       onMouseLeave={handleTouchEnd}

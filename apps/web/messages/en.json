@@ -1,4 +1,12 @@
 {
-  "hello": "Hello",
-  "welcome": "Welcome to the app"
+  "HomePage": {
+    "time": {
+      "period": {
+        "label": "Period",
+        "day": "Day",
+        "week": "Week",
+        "month": "Month"
+      }
+    }
+  }
 }
