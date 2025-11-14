@@ -2,40 +2,40 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #181818;
 
   /* 🧩 Headings */
   .h1 {
     font-family: var(--font-poppins);
-    font-size: 61px;
+    font-size: 48px;
     line-height: 120%;
     font-weight: 600; /* Semibold */
   }
 
   .h2 {
     font-family: var(--font-heading);
-    font-size: 49px;
+    font-size: 40px;
     line-height: 120%;
     font-weight: 500;
   }
 
   .h3 {
     font-family: var(--font-heading);
-    font-size: 39px;
+    font-size: 32px;
     line-height: 120%;
     font-weight: 500;
   }
 
   .h4 {
     font-family: var(--font-heading);
-    font-size: 31px;
+    font-size: 25px;
     line-height: 120%;
     font-weight: 500;
   }
 
   .h5 {
     font-family: var(--font-heading);
-    font-size: 25px;
+    font-size: 16px;
     line-height: 120%;
     font-weight: 500;
   }
@@ -90,45 +90,44 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* 🎨 Primary (azul) */
-  --color-primary-100: #edf0fe;
-  --color-primary-200: #c4d1fc;
-  --color-primary-300: #8aa9f9;
-  --color-primary-400: #3b82f6;
-  --color-primary-500: #1e5fbd;
-  --color-primary-600: #113e80;
-  --color-primary-700: #052048;
+  --color-primary-100: #eaf0ff;
+  --color-primary-200: #c7d6ff;
+  --color-primary-300: #94b4ff;
+  --color-primary-400: #4d8dff; /* nuevo primario */
+  --color-primary-500: #1f62d1;
+  --color-primary-600: #1649a0;
+  --color-primary-700: #0d2f66;
   --color-primary: var(--color-primary-400);
 
-  /* 🎨 Secondary (amarillo/dorado) */
-  --color-secondary-100: #fddfc5;
-  --color-secondary-200: #f6af3b;
-  --color-secondary-300: #c58b2d;
-  --color-secondary-400: #966920;
-  --color-secondary-500: #694913;
-  --color-secondary-600: #402b08;
-  --color-secondary-700: #1a0f02;
-  --color-secondary: var(--color-secondary-200);
+  /* 🟡 Secondary Gold — más premium */
+  --color-secondary-100: #fff4d8;
+  --color-secondary-200: #ffe2a6;
+  --color-secondary-300: #f7c766;
+  --color-secondary-400: #d9a847; /* dorado elegante */
+  --color-secondary-500: #b58a30;
+  --color-secondary-600: #7d5c1d;
+  --color-secondary-700: #49350f;
+  --color-secondary: var(--color-secondary-400);
 
-  /* 🎨 Grey */
-  --color-grey-100: #f0f1f1;
-  --color-grey-200: #d1d2d4;
-  --color-grey-300: #a9abaf;
-  --color-grey-400: #83858c;
-  --color-grey-500: #606167;
-  --color-grey-600: #3f4044;
-  --color-grey-700: #202123;
+  /* ⚪ Neutral Greys — UI modernos */
+  --color-grey-100: #f4f4f5;
+  --color-grey-200: #e4e4e7;
+  --color-grey-300: #d1d1d5;
+  --color-grey-400: #a1a1aa;
+  --color-grey-500: #71717a;
+  --color-grey-600: #52525b;
+  --color-grey-700: #3a3a40;
   --color-grey: var(--color-grey-400);
 
-  /* ✅ Complementarios */
-  --color-success: #22c55e;
+  /* 🟢 Complementarios */
+  --color-success: #16a34a;
   --color-warning: #eab308;
-  --color-error: #ef4444;
-  --color-info: #3b82f6;
+  --color-error: #dc2626;
+  --color-info: #4d8dff;
 
-  /* 🧱 Superficies */
+  /* Surfaces más suaves */
   --color-surface: #ffffff;
-  --color-surface-dark: #0a0a0a;
+  --color-surface-dark: #f6f6f7;
 
   --font-poppins: var(--font-poppins), system-ui, sans-serif;
 }
@@ -138,10 +137,57 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+
+  @theme inline {
+    --background: #0c0d0f;
+    --foreground: #e5e5e5;
+
+    /* 🔵 Primary (Blue) */
+    --color-primary-100: #0d2f66;
+    --color-primary-200: #1649a0;
+    --color-primary-300: #1f62d1;
+    --color-primary-400: #4d8dff;
+    --color-primary-500: #94b4ff;
+    --color-primary-600: #c7d6ff;
+    --color-primary-700: #eaf0ff;
+    --color-primary: var(--color-primary-400);
+
+    /* 🟡 Gold — cálido, no chillón */
+    --color-secondary-100: #49350f;
+    --color-secondary-200: #7d5c1d;
+    --color-secondary-300: #b58a30;
+    --color-secondary-400: #d9a847;
+    --color-secondary-500: #f7c766;
+    --color-secondary-600: #ffe2a6;
+    --color-secondary-700: #fff4d8;
+    --color-secondary: var(--color-secondary-500);
+
+    /* ⚪ Grey — neutros, estilo Apple/Linear */
+    --color-grey-100: #1b1c1f;
+    --color-grey-200: #2a2b2f;
+    --color-grey-300: #3d3d43;
+    --color-grey-400: #5a5b63;
+    --color-grey-500: #8c8d94;
+    --color-grey-600: #c7c7cd;
+    --color-grey-700: #f4f4f5;
+    --color-grey: var(--color-grey-400);
+
+    /* Complementarios */
+    --color-success: #22c55e;
+    --color-warning: #facc15;
+    --color-error: #ef4444;
+    --color-info: #60a5fa;
+
+    /* Superficies */
+    --color-surface: #111214;
+    --color-surface-dark: #ffffff;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+  }
 }
 
 body {
-  background: var(--color-grey-100);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

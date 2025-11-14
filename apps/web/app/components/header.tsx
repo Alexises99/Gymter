@@ -11,7 +11,7 @@ export function Header() {
         height={54}
         className="rounded-lg aspect-square object-cover"
       />
-      <IconMenu2 color="black" />
+      <IconMenu2 color="var(--color-foreground)" />
     </header>
   )
 }

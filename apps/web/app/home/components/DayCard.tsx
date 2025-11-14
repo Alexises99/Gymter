@@ -17,20 +17,20 @@ export function DayCard({
 }: DayCardProps) {
   const variants: Record<Variant, string> = {
     default: 'bg-primary-200',
-    selected: 'bg-primary-400',
+    selected: 'bg-primary-400 border border-white',
     disabled: 'bg-gray-200'
   } as const
 
   return (
     <button
-      className={`${variants[variant]} w-14 aspect-square rounded-lg flex flex-col gap-1 items-center justify-center text-black shrink-0 absolute left-[calc(50%-28px)]`}
+      className={`${variants[variant]} w-14 aspect-square rounded-lg flex flex-col gap-1 items-center justify-center shrink-0 absolute left-[calc(50%-28px)] touch-none`}
       onClick={handleClick}
       style={{ transform: `translateX(${translationX}px)` }}
     >
-      <span className="p-bold">
+      <span className="p-bold text-secondary-800">
         {date.toLocaleDateString('default', { day: '2-digit' })}
       </span>
-      <span className="p-mini">
+      <span className="p-mini  text-foreground`">
         {date.toLocaleString('default', { weekday: 'short' })}
       </span>
     </button>
