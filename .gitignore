@@ -9,6 +9,7 @@ lerna-debug.log*
 coverage
 
 packages/database/generated/prisma
+packages/database/prisma/generated
 node_modules
 dist
 dist-ssr

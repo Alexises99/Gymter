@@ -3,21 +3,17 @@ import { PrismaClient } from '../generated/prisma'
 const prisma = new PrismaClient()
 
 async function seed() {
-  const alex = await prisma.user.create({
+  const alex = await prisma.appUser.create({
     data: {
-      email: 'alex@gymter.es',
       name: 'Linuxgunter',
-      password: 'password test',
       height: 179,
       weight: 74
     }
   })
 
-  const laura = await prisma.user.create({
+  const laura = await prisma.appUser.create({
     data: {
-      email: 'laura@gmail.es',
       name: 'Lilis',
-      password: 'password test 2',
       height: 160,
       weight: 64
     }
