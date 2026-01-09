@@ -1,4 +1,10 @@
 {
+  "LoginPage": {
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Sign In",
+    "continueWith": "Continue with {provider}"
+  },
   "HomePage": {
     "time": {
       "period": {

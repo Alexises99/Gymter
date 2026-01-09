@@ -5,7 +5,7 @@
     "paths": {
       "@/*": ["./*"],
       "@/app/*": ["./app/*"],
-      "@/components/*": ["./app/home/components/*"],
+      "@/components/*": ["app/(protected)/home/components/*"],
       "@/utils/*": ["./utils/*"],
       "@/types/*": ["./types/*"],
       "@/stories/*": ["./stories/*"],

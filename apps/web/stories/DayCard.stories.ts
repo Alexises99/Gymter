@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/nextjs-vite'
-import { DayCard } from '../app/home/components/DayCard'
+import { DayCard } from '../app/(protected)/home/components/DayCard'
 
 const meta = {
   title: 'Components/DayCard',

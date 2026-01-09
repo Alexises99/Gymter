@@ -1,6 +1,4 @@
-import { PrismaClient } from '../generated/prisma'
-
-const prisma = new PrismaClient()
+import { prisma } from '@/client'
 
 async function seed() {
   const alex = await prisma.appUser.create({
@@ -124,6 +122,8 @@ async function seed() {
   })
 }
 
-seed()
-  .then(() => console.log('Database seed was successful'))
-  .catch((error) => console.error('Database seed error', error))
+try {
+  await seed()
+} catch (error) {
+  console.error('Database seed error', error)
+}

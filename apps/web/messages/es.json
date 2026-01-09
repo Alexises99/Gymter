@@ -1,0 +1,19 @@
+{
+  "LoginPage": {
+    "title": "Iniciar sesión en Gymter",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "continueWith": "Continuar con {provider}"
+  },
+  "HomePage": {
+    "time": {
+      "period": {
+        "label": "Periodo",
+        "day": "Día",
+        "week": "Semana",
+        "month": "Mes"
+      }
+    }
+  }
+}

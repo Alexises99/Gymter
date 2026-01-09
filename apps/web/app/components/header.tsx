@@ -1,7 +1,7 @@
 import { IconMenu2 } from '@tabler/icons-react'
 import Image from 'next/image'
 
-export function Header() {
+export function ProtectedHeader() {
   return (
     <header className="p-4 pb-6 flex items-center justify-between">
       <Image

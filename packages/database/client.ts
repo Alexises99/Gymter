@@ -1,27 +1,13 @@
-import { PrismaClient } from './generated/prisma'
+import 'dotenv/config'
+import { PrismaClient } from './prisma/generated/client'
+import { PrismaPg } from '@prisma/adapter-pg'
+import { env } from 'prisma/config'
 
-const prismaClient = new PrismaClient().$extends({
-  query: {
-    account: {
-      async findUnique({ args, query }) {
-        const account = await query(args)
-        if (!account) return null
-        const { password, ...rest } = account
-        return rest
-      },
-      async findFirst({ args, query }) {
-        const account = await query(args)
-        if (!account) return null
-        const { password, ...rest } = account
-        return rest
-      },
-      async findMany({ args, query }) {
-        const accounts = await query(args)
-        return accounts.map(({ password, ...rest }) => rest)
-      }
-    }
-  }
+const adapter = new PrismaPg({
+  connectionString: env('DATABASE_URL')
 })
+
+const prismaClient = new PrismaClient({ adapter })
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined

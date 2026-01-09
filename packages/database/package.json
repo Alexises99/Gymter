@@ -17,8 +17,8 @@
     "db:seed": "tsx prisma/seed.ts"
   },
   "devDependencies": {
-    "@gymter/typescript-config": "workspace:*",
     "@gymter/eslint-config": "workspace:*",
+    "@gymter/typescript-config": "workspace:*",
     "@types/node": "catalog:main",
     "prisma": "catalog:prisma",
     "tsx": "^4.19.3",
@@ -28,6 +28,7 @@
   "author": "Alex Sanchez",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
     "@prisma/client": "catalog:prisma"
   }
 }
