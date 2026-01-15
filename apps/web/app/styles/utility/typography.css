@@ -1,0 +1,78 @@
+@utility h1 {
+  font-family: var(--font-poppins);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@utility h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility h3 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility h4 {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility h5 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* 📝 Paragraphs */
+
+@utility p-large {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@utility p {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@utility p-medium {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@utility p-bold {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@utility p-mini {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@utility p-tiny {
+  font-family: var(--font-inter);
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+}

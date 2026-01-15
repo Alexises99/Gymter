@@ -1,0 +1,48 @@
+:root {
+  --background: #ffffff;
+  --foreground: #181818;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary-100: #eaf0ff;
+  --color-primary-200: #c7d6ff;
+  --color-primary-300: #94b4ff;
+  --color-primary-400: #4d8dff; /* nuevo primario */
+  --color-primary-500: #1f62d1;
+  --color-primary-600: #1649a0;
+  --color-primary-700: #0d2f66;
+  --color-primary: var(--color-primary-400);
+
+  /* 🟡 Secondary Gold — más premium */
+  --color-secondary-100: #fff4d8;
+  --color-secondary-200: #ffe2a6;
+  --color-secondary-300: #f7c766;
+  --color-secondary-400: #d9a847; /* dorado elegante */
+  --color-secondary-500: #b58a30;
+  --color-secondary-600: #7d5c1d;
+  --color-secondary-700: #49350f;
+  --color-secondary: var(--color-secondary-400);
+
+  /* ⚪ Neutral Greys — UI modernos */
+  --color-grey-100: #f4f4f5;
+  --color-grey-200: #e4e4e7;
+  --color-grey-300: #d1d1d5;
+  --color-grey-400: #a1a1aa;
+  --color-grey-500: #71717a;
+  --color-grey-600: #52525b;
+  --color-grey-700: #3a3a40;
+  --color-grey: var(--color-grey-400);
+
+  /* 🟢 Complementarios */
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-error: #dc2626;
+  --color-info: #4d8dff;
+
+  /* Surfaces más suaves */
+  --color-surface: #ffffff;
+  --color-surface-dark: #f6f6f7;
+}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 
-import './globals.css'
+import './styles/globals.css'
 
 const inter = Inter({
   variable: '--font-inter',

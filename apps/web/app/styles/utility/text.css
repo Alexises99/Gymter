@@ -1,0 +1,22 @@
+@utility text-title {
+  @apply h1;
+}
+
+@utility text-body {
+  @apply p;
+}
+
+@utility text-base {
+  font-family: var(--font-inter);
+  line-height: 1.2;
+}
+
+@utility text-lg {
+  font-size: 20px;
+}
+@utility text-md {
+  font-size: 16px;
+}
+@utility text-sm {
+  font-size: 13px;
+}
