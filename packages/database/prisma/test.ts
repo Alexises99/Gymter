@@ -1,20 +1,24 @@
 import { prisma } from '@/client'
+import bcrypt from 'bcryptjs'
 
-const appUsers = await prisma.appUser.findMany({
-  where: { userId: null }
-})
+async function main() {
+  const accounts = await prisma.account.findMany({
+    where: { providerId: 'credentials' }
+  })
 
-for (const appUser of appUsers) {
-  const user = await prisma.user.create({
-    data: {
-      id: crypto.randomUUID(),
-      name: appUser.name,
-      email: `${appUser.name}@example.com` // temporal
+  for (const account of accounts) {
+    // Solo rehace hash si parece texto plano
+    if (!account.password?.startsWith('$2')) {
+      const hashed = await bcrypt.hash(account.password!, 10)
+      await prisma.account.update({
+        where: { id: account.id },
+        data: { password: hashed }
+      })
+      console.log(`✅ Contraseña hasheada para ${account.accountId}`)
     }
-  })
-
-  await prisma.appUser.update({
-    where: { id: appUser.id },
-    data: { userId: user.id }
-  })
+  }
 }
+
+main()
+  .catch(console.error)
+  .finally(() => prisma.$disconnect())

@@ -18,6 +18,80 @@
   }
 }
 
-input {
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
   @apply input-base p-large;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+
+  cursor: pointer;
+  width: 1.2em;
+  height: 1.2em;
+
+  border-radius: 0.25em;
+  border: 2px solid var(--color-grey-400);
+  background-color: var(--color-surface);
+
+  display: grid;
+  place-content: center;
+
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease;
+
+  /* Check */
+  &::before {
+    content: '';
+    width: 0.6em;
+    height: 0.6em;
+    transform: scale(0);
+    transition: transform 120ms ease-in-out;
+    background-color: var(--color-primary-400);
+    border-radius: 0.125em;
+  }
+
+  /* Checked */
+  &:checked {
+    border-color: var(--color-primary-400);
+    background-color: color-mix(
+      in srgb,
+      var(--color-primary-400) 20%,
+      var(--color-surface)
+    );
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+
+  /* Hover */
+  &:hover:not(:disabled) {
+    border-color: var(--color-primary-300);
+  }
+
+  /* Focus (accesible) */
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--color-primary-400) 40%, transparent);
+  }
+
+  /* Disabled */
+  &:disabled {
+    cursor: not-allowed;
+    border-color: var(--color-grey-300);
+    background-color: var(--color-grey-100);
+  }
+
+  &:disabled::before {
+    background-color: var(--color-grey-400);
+  }
 }

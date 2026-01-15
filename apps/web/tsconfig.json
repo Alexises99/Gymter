@@ -11,7 +11,8 @@
       "@/stories/*": ["./stories/*"],
       "@/i18n/*": ["./i18n/*"],
       "@/messages/*": ["./messages/*"],
-      "@/public/*": ["./public/*"]
+      "@/public/*": ["./public/*"],
+      "@/auth/*": ["./auth/*"]
     },
     "baseUrl": ".",
     "jsx": "preserve"

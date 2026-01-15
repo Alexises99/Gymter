@@ -5,6 +5,16 @@
     "loginButton": "Sign In",
     "continueWith": "Continue with {provider}"
   },
+  "SignupPage": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "signupButton": "Sign Up",
+    "signupLoading": "Signing up...",
+    "continueWith": "Continue with {provider}",
+    "footerText": "Progress isn’t guessed, it’s measured",
+    "caption": "I commit to giving my all on every rep 💪."
+  },
   "HomePage": {
     "time": {
       "period": {
@@ -14,5 +24,12 @@
         "month": "Month"
       }
     }
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again."
+  },
+  "Error": {
+    "PASSWORD_TOO_SHORT": "Password must be at least 8 characters long."
   }
 }
