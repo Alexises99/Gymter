@@ -20,6 +20,7 @@
     "@gymter/eslint-config": "workspace:*",
     "@gymter/typescript-config": "workspace:*",
     "@types/node": "catalog:main",
+    "bcryptjs": "^3.0.3",
     "prisma": "catalog:prisma",
     "tsx": "^4.19.3",
     "typescript": "catalog:main"
