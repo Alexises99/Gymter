@@ -6,7 +6,7 @@ export default function LoginPage() {
 
   return (
     <main className="px-6 flex flex-col min-h-dvh">
-      <div className="flex-1 flex flex-col gap-8">
+      <div className="flex-1 flex flex-col gap-8 justify-center">
         <header>
           <h1 className="text-center h1">GYMTER</h1>
         </header>
@@ -15,17 +15,19 @@ export default function LoginPage() {
             type="email"
             placeholder={t('email')}
             name="email"
-            className="border w-full p-large p-2 rounded-md bg-surface text-primary-700"
+            autoComplete="email"
+            className="border w-full p-large p-2 rounded-md bg-surface text-primary-700 placeholder:pl-1"
           />
           <input
             type="password"
             placeholder={t('password')}
             name="password"
-            className="border w-full p-large p-2 rounded-md bg-surface text-primary-700"
+            autoComplete="current-password"
+            className="border w-full p-large p-2 rounded-md bg-surface text-primary-700 placeholder:pl-1"
           />
           <button
             type="submit"
-            className="bg-primary-400 rounded-md p-2 font-bold text-lg mt-4"
+            className="button-base button-primary text-lg mt-4"
           >
             {t('loginButton')}
           </button>

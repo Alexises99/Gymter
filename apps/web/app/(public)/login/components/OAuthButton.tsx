@@ -25,7 +25,7 @@ export function OAuthButton({ provider }: OAuthButtonProps) {
   })
 
   return (
-    <button className="flex gap-2 w-full justify-center bg-surface p-2 rounded-md p-medium items-center">
+    <button className="button-base button-secondary">
       <Logo className="text-primary-600" />
       {label}
     </button>
