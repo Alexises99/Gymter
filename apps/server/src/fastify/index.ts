@@ -13,6 +13,9 @@ import {
   type ZodTypeProvider
 } from 'fastify-type-provider-zod'
 
+import { createUserRestRoutes } from '../core/presentation/rest/user.routes'
+import { DIContainer } from '../core/infrastructure/di/container'
+
 export const createServer = () => {
   const server = fastify({
     maxParamLength: 5000
@@ -22,6 +25,8 @@ export const createServer = () => {
   server.setSerializerCompiler(serializerCompiler)
 
   server.register(cors)
+
+  // tRPC setup
   server.register(fastifyTRPCPlugin, {
     prefix: '/trpc',
     trpcOptions: {
@@ -31,6 +36,12 @@ export const createServer = () => {
         console.error(`Error in tRPC handler on path '${path}':`, error)
       }
     } satisfies FastifyTRPCPluginOptions<AppRouter>['trpcOptions']
+  })
+
+  // REST API setup
+  const container = DIContainer.getInstance()
+  server.register(createUserRestRoutes(container.userRepository), {
+    prefix: '/api'
   })
 
   return server

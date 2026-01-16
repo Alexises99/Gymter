@@ -2,11 +2,18 @@
   "extends": "@gymter/typescript-config/node.json",
   "compilerOptions": {
     "types": ["node"],
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
       "@utils/*": ["src/utils/*"],
       "@services/*": ["src/services/*"],
-      "types/*": ["src/types/*"]
+      "types/*": ["src/types/*"],
+      "@application/*": ["src/core/application/*"],
+      "@infrastructure/*": ["src/core/infrastructure/*"],
+      "@domain/*": ["src/core/domain/*"],
+      "@presentation/*": ["src/core/presentation/*"]
     }
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
